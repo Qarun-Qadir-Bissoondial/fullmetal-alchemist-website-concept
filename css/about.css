@@ -1,0 +1,37 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	background-image: url("../img/fmab.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: garamond sans-serif arial helvetica;
+}
+
+#header {
+	width: 100%;
+	background: rgba(4, 4, 4, 0.8);
+	margin: 0;
+	padding: 10px;
+	color: greenyellow;
+	z-index: 1;
+}
+#header div { padding: 5px; }
+
+.content-area {
+	background-color: rgba(4,4,4, 0.8);
+	border: none;
+	border-radius: 0px;
+	color: white;
+}
+.row { margin-right: 0; }
+#dev { display: block; }
+
+li { list-style-type: none; }
+hr { border-bottom: 1px solid white; }
+img {
+	width: 300px;
+	margin-left: 10px;
+	border-radius: 50%;
+	float: left;
+}

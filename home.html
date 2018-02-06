@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/home.css">
+	<script src = "libs/jquery-3.3.1.min.js"></script>
+	<script src="libs/highcharts.js"></script>
+	<title>FMA Main Page</title>
+</head>
+<body>
+
+		<div class = "container-fluid">
+			<header class = "content-area">
+				<h1 class = "text-center">FullMetal Alchemist Fan Club</h1>
+				<q> <em> Humankind cannot gain anything without first giving something in return. To obtain, something of equal value must be lost. That is alchemy's first law of Equivalent Exchange. In those days, we really believed that to be the world's one, and only truth. </em> </q>
+
+				<nav class = "row text-center">
+					
+					<div class="col-md-3">
+						<div class="custom-dropdown" id = "watch-anime"> 
+							<div class="selected primary closed">
+								<span> Watch the anime here</span>
+								<div class="arrow-down"></div>	
+							</div> 
+							<div class = "all_choices overlap" >
+								<ul>
+									<li><a href="https://otakustream.tv/anime/fullmetal-alchemist-brotherhood/episode-1/">OtakuStream</a></li>
+									<li><a href="https://www.netflix.com/tt/title/70204981">Netflix</a></li>
+									<li><a href="https://ww5.gogoanime.io/fullmetal-alchemist-brotherhood-episode-1">Gogoanime</a></li>
+								</ul>
+								
+							</div>
+						</div> 
+					</div>
+
+
+					<div class="col-md-3">
+						<div class="custom-dropdown" id = "read-manga"> 
+							<div class="selected primary closed">
+								<span> Read the manga here</span>
+								<div class="arrow-down"></div>	
+							</div> 
+							<div class = "all_choices overlap" >
+
+								<ul>
+									<li><a href="http://fanfox.net/manga/fullmetal_alchemist/" target = "_blank">MangaFox</a></li>
+									<li><a href="http://manganelo.com/manga/read_fullmetal_alchemist_manga" target = "_blank">Mangakakalot</a></li>
+									<li><a href="https://mangarock.com/manga/mrs-serie-288525" target = "_blank">MangaRock</a></li>
+								</ul>
+								
+							</div>
+						</div> 
+					</div>
+
+					<div class="col-md-3">
+						<div class="selected primary" id = "feedback">Send us feedback</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="selected primary"><a href="about.html">More about this page</a></div>
+					</div>
+				</nav>
+			</header>
+			<hr>
+			<div class = "content-area text-center">
+				<div id="plot">
+					<h3>Plot</h3>
+					<p> Fullmetal Alchemist (Japanese: 鋼の錬金術師 Hepburn: Hagane no Renkinjutsushi) is an anime adaptation of the manga of the same name by Hiromu Arakawa. Comprising 51 episodes, it was co-produced by the animation studio Bones, Mainichi Broadcasting System, and Aniplex and directed by Seiji Mizushima. It was broadcast on the Mainichi Broadcasting System in Japan between October 4, 2003, and October 2, 2004. A second television series titled in English as Fullmetal Alchemist: Brotherhood was later broadcast in 2009 and New One Premiering Rerun Return on Toonami on USA August 16, 2014 and expired on January 10, 2015. </p>
+					<p> The central characters of the anime are Edward and Alphonse Elric: two alchemist brothers who are searching for the Philosopher's Stone so they can obtain their bodies after a failed attempt to bring their dead mother back to life. A sequel film which was not based on the original manga, Conqueror of Shamballa, was released in 2005.</p>
+				</div>
+
+				<div id="characters" class = "text-center">
+					<h3>Characters</h3>
+					<div class="row">
+						<div class="custom-dropdown" id = "filter-faction"> 
+							<div class="selected primary closed">
+								<span> Select Faction</span>
+								<div class="arrow-down"></div>	
+							</div> 
+							<div class = "all_choices" >
+
+								<ul>
+									<li id = "protagonist">Protagonists</li>
+									<li id = "supporting">Supporting</li>
+									<li id = "antagonist">Antagonists</li>
+								</ul>
+
+								
+							</div>
+						</div> 
+					</div>
+				
+
+					<!-- Show an interactive table of characters
+					Include online pictures of the characters, reduce memory and loading time on client side -->
+					<span id = "hide-char"><u>[Hide Characters]</u></span>
+					<div class="row" id = "char-table">
+							<table>
+								<thead>
+									
+									<tr>
+										<th>Name</th>
+										<th>Image</th>
+										<th>Description</th>
+									</tr>
+
+								</thead>
+								<tbody id = "added-info">
+									
+								</tbody>
+							</table>
+					</div>
+					
+				</div>
+			</div>
+
+			<hr>
+			<div id="ratings" class = "content-area">
+				<h3 class = "text-center">Wanna see what people thing about FMA?</h3>
+				<div id="container"></div>
+				<script src = "js/chart.js"></script>
+			</div>
+			
+		
+		</div>
+	<script src = "js/home.js"></script>	
+</body>
+</html>

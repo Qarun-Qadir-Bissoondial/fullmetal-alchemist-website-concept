@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src = "libs/jquery-3.3.1.min.js"></script>
+
+	<title>FullMetal Alchemist: Brotherhood Fan Page</title>
+</head>
+<body>
+	
+	<div class="row" id = "header">
+		<h3 class = "offset-md-4 col-md-4 text-center darker">FullMetal Alchemist Fan Club</h3>
+	</div>
+
+	<div id="first">
+		
+		<div class = "form login">
+			<h4 class = "darker">Welcome back, honoured fan</h4>
+			<form id = "form" action = "home.html" method = "post">
+				<div class="form-group">
+					<label for="username">Username: </label>
+					<input type="text" name = "username" id = "username" pattern = "[A-za-z]{1,}" required>
+				</div>
+
+				<div class="form-group">
+					<label for="pword">Password: </label>
+					<input type="password" name = "pword" pattern = "(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+				</div> <br>
+
+					<button class = "btn btn-success" type = "submit" value = "submit">Submit</button>
+					<button class = "btn btn-danger" type = "reset" value = "reset">Cancel</button>
+				<br>
+
+				<span class = "change"> <u><small>Don't have an account? Sign up now! </small> </u></span>
+			</form>
+			
+		</div>
+
+	</div>
+
+	
+	<div id="second">
+			
+		<div class = "form registration">
+			<form onsubmit = "return false;" autocomplete="on" data-email = "qarun80@gmail.com">
+				<div class="form-group" id="personal">
+					<h3> Personal info </h3>
+					<div class="form-group">
+						<label for="fname">First name: </label> <br>
+						<input type="text" name = "fname" id = "fname" placeholder = "First name" pattern = "[A-Za-z]{1,20}" title = "Only uppercase and lowercase letters" required>
+					</div>
+					<div class="form-group">	
+						<label for="lname">Last name: </label> <br>
+						<input type="text" name = "lname" id = "lname" placeholder = "Last name" pattern = "[A-Za-z]{1,20}" title = "Only uppercase and lowercase letters" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="dob">Date of birth: </label> <br>
+						<input type="date" name = "dob" id = "dob">
+					</div>
+
+					<div class="form-group">
+						<label for="sex">Sex: </label>
+						<select name="sex" id = "sex" required>
+							<option id = "default" value = "">Select one</option>
+							<option value="M">Male</option>
+							<option value="F">Female</option>
+						</select>
+					</div>
+					
+					<div class="form-group">
+						<label for="lname">Email: </label> <br>
+						<input type="email" name = "email" placeholder = "someone@example.com"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title = "someone@example.com" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="more">
+								We're glad you want to be part of our community! Tell us a little more about yourself. <br>
+								This part is optional, so you don't have to if you don't want to :)
+						</label>
+						<textarea name="more" id = "more" cols="30" rows="10" placeholder = "Tell us why you're awesome!"></textarea>
+					</div>
+					
+					<p><em>Note that we have utmost respect for your privacy. <br> As such, none of your personal information will be given to third-party advertisers or businesses.</em></p>
+
+				</div>
+				<hr>
+				<div class="form-group" id="site-info">
+					<h3> Site user info </h3>
+					<div class="form-group">
+						<label for="username">Username: </label> <br>
+						<input type="text" name = "username" pattern = "[A-Za-z]{1,}" title = "Only uppercase and lowercase letters are allowed" required>
+					</div>
+
+					<div class="form-group">
+						<label for="pword">Password: </label> <br>
+						<input id = "pword" type="password" name = "pword" pattern = "(?=.*[a-z])(?=.*[A-Z]).{8,}" title = "At least 8 characters containing at least 1 uppercase and 1 lowercase letter" required>
+					</div>
+
+					<div class="form-group">
+						<label for="valid-pword">Re-enter password: </label> <br>
+						<input id = "valid-pword" type="password" name = "valid-pword" pattern = "(?=.*[a-z])(?=.*[A-Z]).{8,}" title = "At least 8 characters containing at least 1 uppercase and 1 lowercase letter">
+						<p id = "results"></p>
+					</div>
+
+					<div class="form-group">
+						<label for="pin">Secondary Numeric id: </label> <br>
+						<input type="number" name = "pin" id = "pin">
+					</div>
+
+				</div>
+
+				<div class="form-group">
+					<button id = "submitbtn" type = "submit" value = "submit" class = "btn btn-success">Submit</button>
+					<button type = "reset" value = "reset" class = "btn btn-danger">Reset</button>
+				</div>
+			</form>
+
+			<span class = "change"> <u><small>Already have an account? Sign in! </small> </u></span>
+			<br><br><br>
+			
+		</div>
+
+	</div>
+
+	<div class="row" id="footer">
+		<div id = "info">
+			<p>Need a website built?</p>
+			<p>Contact the developers <a href="about.html">here</a> for more info</p>
+			<p>Note that we do not disclose your personal information to third-parties</p>
+		</div>
+	</div>
+
+	<script src = "js/main.js"></script>
+</body>
+</html>
